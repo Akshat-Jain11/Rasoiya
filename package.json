@@ -1,0 +1,34 @@
+{
+  "name": "rasoiya",
+  "version": "1.0.0",
+  "description": "This is food-delivery app by Akshat Jain",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshat-Jain11/Rasoiya.git"
+  },
+  "keywords": [
+    "mummasKitchen"
+  ],
+  "author": "Akshat Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akshat-Jain11/Rasoiya/issues"
+  },
+  "homepage": "https://github.com/Akshat-Jain11/Rasoiya#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

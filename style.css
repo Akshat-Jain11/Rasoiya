@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: beige;
+
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+.header {
+    border-bottom: 4px solid rgb(5, 5, 136);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    width: 98vw;
+    background-color: antiquewhite;
+}
+
+.header-options {
+    font-size: 1.3rem;
+    display: flex;
+    list-style-type: none;
+}
+
+.header-options li {
+    padding: 0 0.5rem;
+}
+
+.body{
+    padding: 7rem 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.search{
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 0 1.5rem 10rem;
+    font-size: 1.3rem;
+}
+
+.search-bar {
+    padding: 0 5rem 0 0;
+}
+
+.search button{
+    padding: 0.2rem 0.6rem;
+    margin: 15px solid #000;
+}
+
+.restraunts{
+    padding: 2rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restraunt-card{
+    background-color: #ccc;
+    height: 22rem;
+    width: 15rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 0.8rem;
+}
+
+.restraunt-card:hover{
+    border: 2px solid #555;
+    padding: calc(0.5rem - 2px);
+    size-adjust: 10%;
+}
+
+.restraunt-card img{
+    width: 100%;
+    height: 50%;
+    padding-bottom: 0.5rem;
+    
+}
+
+.star{
+    padding: 0 0.2rem ;
+    margin: 0 1rem 0 0;
+    background-color: green;
+    color: white;
+}
