@@ -48,25 +48,13 @@ const Body = () => {
                         } 
                     }>
                     Top-Rated Restraunts
-                    {/* {console.log(filteredRestraunts)} */}
                 </button>
-
-                {/* <button className="filter-btn" onClick={ () => {
-                            const filteredList = listOfRestraunts.filter( (res) => (res.info.avgRating > 0) )
-                            setListOfRestraunts(filteredList)
-                        } 
-                    }>
-                    All Restraunts
-                </button> */}
 
             </div>
             <div className="restraunts">
                 { 
-                // (filteredRestraunts.length === 0) ? 
-                    // listOfRestraunts.map( (restraunt) => (<RestrauntCard key={restraunt.info.id} restrauntData={restraunt} />) ) 
-                    // :  
-                    filteredRestraunts.map( (restraunt) => (<RestrauntCard key={restraunt.info.id} restrauntData={restraunt} />) )
-                } 
+                    filteredRestraunts.map( (restraunt) => (<RestrauntCard key={restraunt.info.id} restrauntData={restraunt} />) ) 
+                }
             </div>
         </div>
     )
