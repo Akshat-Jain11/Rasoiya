@@ -1,23 +1,20 @@
 *{
     padding: 0;
     margin: 0;
+    max-width: 99vw;
 }
 
 .logo{
-    width: 5rem;
-    height: 5rem;
+    width: auto;
+    height: 7rem;
 }
 
 .header {
     border-bottom: 4px solid rgb(5, 5, 136);
-    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
-    position: fixed;
-    width: 98vw;
     background-color: antiquewhite;
 }
 
@@ -37,7 +34,6 @@
 }
 
 .body{
-    padding: 7rem 0 0;
     display: flex;
     flex-direction: column;
 }
@@ -65,12 +61,18 @@
     padding: 2rem 11rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.restraunts a{
+    text-decoration: none;
 }
 
 .restraunt-card{
     background-color: #e0e0e0;
+    color: #000;
     height: 22rem;
-    width: 15rem;
+    width: 14rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     margin: 0.8rem auto;
     border-radius: 0.5rem;
@@ -81,6 +83,7 @@
     border: 2px solid #efefef;
     padding: calc(0.5rem - 1px);
     size-adjust: 10%;
+    background-color: #dadada;
 }
 
 .restraunt-card img{
@@ -91,21 +94,11 @@
 }
 
 .star{
-    padding: 0 0.2rem ;
-    margin: 0 1rem 0 0;
+    padding: 0 0.1rem;
     background-color: green;
     color: white;
-}
-
-
-.shimmer-container {
-    padding: 7rem 0;
-}
-
-.shimmer-cards-container{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 11rem;
+    border-radius: 1.9rem;
+    margin: 0 0.1rem 0 0;
 }
 
 .shimmer-header{
@@ -115,10 +108,29 @@
     margin-bottom: 2rem;
 }
 
+.shimmer-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10.85rem;
+}
+
 .shimmer-card{
     background-color: rgba(240, 240, 240,0.6);
     height: 23rem;
     width: 16rem;
     margin: 0.8rem auto;
     border-radius: 0.5rem;
+    justify-content: space-between;
+}
+
+.resturant-menu{
+    padding: 0.2rem;
+}
+
+.restraunt-menu h1,h3,h2 { 
+    padding: 0.4rem;
+}
+
+.resturant-menu ul{
+    padding: 0 2rem;
 }
