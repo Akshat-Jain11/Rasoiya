@@ -9,8 +9,6 @@ const Body = () => {
     const [filteredRestraunts, setFilteredRestraunts] = useState([]);
     const [searchText, setSearchText] = useState("")
 
-    let filterBtn = false;
-
     useEffect( ()=>{
         fetchData()
     }, [] )
@@ -30,7 +28,6 @@ const Body = () => {
                 <div className="search">
                     <input type="text" id="search-bar" className="search-box" value={searchText} onChange={ (e)=>{setSearchText(e.target.value)} } />
                     <button onClick={ ()=>{
-                        
                         const searchResultList = listOfRestraunts.filter( (restraunt) =>
                             ( restraunt.info.name.toLowerCase().includes(searchText.toLowerCase()) ) || 
                             ( restraunt.info.cuisines.map( (item)=>item.toLowerCase() ).includes(searchText.toLowerCase()) ) 
@@ -42,7 +39,7 @@ const Body = () => {
                 </div>
                     
                 <button className="filter-btn" onClick={ () => {
-                        const filteredList = listOfRestraunts.filter( (res) => (res.info.avgRating > 4.4) )
+                        const filteredList = listOfRestraunts.filter( (res) => (res.info.avgRating > 4.1) )
                         setFilteredRestraunts(filteredList)
                     } 
                 }>

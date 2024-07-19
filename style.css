@@ -134,3 +134,10 @@
 .resturant-menu ul{
     padding: 0 2rem;
 }
+
+.member-card{
+    padding: 2rem;
+    margin: 0.5rem;
+    border: 0.2rem solid blue;
+}
+
