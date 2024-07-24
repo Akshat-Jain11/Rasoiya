@@ -8,7 +8,7 @@ class UserClass extends React.Component {
         this.state = {
             userInfo: {
                 name: "Dummy name",
-                location : "Defualt location",
+                login : "Defualt id",
                 id: 0X0,
                 avatar_url: ""
             }
@@ -26,15 +26,18 @@ class UserClass extends React.Component {
     render() {
 
         // const {name, location} = this.props
-        const {name, location, id, avatar_url} = this.state.userInfo
+
+        const {name, id, login, avatar_url} = this.state.userInfo
 
         return(
-            <div className="member-card">
-                <h1>Name : {name}</h1>
-                <h2>Role : Developer</h2>
-                <h3>Location : {location}</h3>
-                <h3>ID : {id}</h3>
-                <img src={avatar_url} />
+            <div className="member-card mt-4 p-2 w-[36rem] border-4 rounded-2xl border-blue-600 flex items-center justify-evenly">
+                <div>
+                    <h1>Name : {name}</h1>
+                    <h2>Role : Developer</h2>
+                    <h3>GitHub ID : {login}</h3>
+                    <h3>ID : {id}</h3>
+                </div>
+                <img src={avatar_url} className="rounded-full border-2 border-black"/>
 
                 {/* <h4>Count : {dummy}</h4>
                 <h4>Value of Dummy2: {dummy2}</h4>

@@ -22,7 +22,9 @@
   "homepage": "https://github.com/Akshat-Jain11/Rasoiya#readme",
   "devDependencies": {
     "parcel": "^2.12.0",
-    "process": "^0.11.10"
+    "postcss": "^8.4.39",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.6"
   },
   "dependencies": {
     "react": "^18.3.1",

@@ -10,9 +10,9 @@ class  About extends React.Component{
 
     render(){
         return (
-            <div>
-                <h1>About</h1>
-                <h2>This is the about page</h2>
+            <div className="px-4 py-2">
+                <h1 className="text-4xl font-bold">About</h1>
+                <h2 className="text-xl">This is the about page</h2>
                 <UserClass name={"Akshat (class)"} location={"Remote (class)"}/>
             </div>
         )
